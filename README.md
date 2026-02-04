@@ -1,4 +1,4 @@
-# Projeto J-Car | Sistema Front End
+# Projeto Site | Sistema Front End
 
 ##  Visão Geral
 Este projeto representa o início da minha jornada como desenvolvedor full stack. Ele foi pensado como um sistema simples de gestão, desenvolvido inicialmente apenas no **front end**, com foco total em aprendizado, prática e organização de código.

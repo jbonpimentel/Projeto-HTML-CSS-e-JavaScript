@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Clientes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="header">
+        <h2>Clientes</h2>
+
+        <div>
+          <button class="btn" id="addcliente">Adicionar Cliente</button>
+          <a href="menu.html" class="btn-voltar">Voltar</a>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <p>Exibindo 1 - 6 de 6 resultados</p>
+      </div>
+
+      <!-- TABELA -->
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-img"></th>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Telefone</th>
+              <th>Email</th>
+              <th>Endereço</th>
+              <th>Status</th>
+              <th>Sexo</th>
+              <th>Data Nasc.</th>
+              <th class="col-action">Ações</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabelaClientes">
+
+            <tr data-id="12345678900">
+              <td class="col-img">👤</td>
+              <td class="col-nome">João Henrique Silva</td>
+              <td>123.456.789-00</td>
+              <td class="col-telefone">(11) 98765-4321</td>
+              <td class="col-email">joao.silva@email.com</td>
+              <td class="col-endereco">Rua das Flores, 120 SP</td>
+              <td><span class="status ativo">Ativo</span></td>
+              <td>Homem</td>
+              <td>15/03/1992</td>
+              <td class="col-action">
+                <button class="btn btn-editar" type="button">Editar</button>
+                <button class="btn btn-inativar" type="button">Inativar</button>
+              </td>
+            </tr>
+
+            <tr data-id="987.654.321-00">
+              <td class="col-img">👤</td>
+              <td class="col-nome">Mariana Alves Costa</td>
+              <td>987.654.321-00</td>
+              <td class="col-telefone">(21) 97654-3210</td>
+              <td class="col-email">mariana.costa@email.com</td>
+              <td class="col-endereco">Av. Atlântica, 455 – RJ</td>
+              <td><span class="status ativo">Ativo</span></td>
+              <td>Mulher</td>
+              <td>22/08/1995</td>
+              <td class="col-action">
+                <button class="btn btn-editar" type="button">Editar</button>
+                <button class="btn btn-inativar" type="button">Inativar</button>
+              </td>
+            </tr>
+
+            <tr data-id="456.789.123-00">
+              <td class="col-img">👤</td>
+              <td class="col-nome">Carlos Eduardo Lima</td>
+              <td>456.789.123-00</td>
+              <td class="col-telefone">(31) 96543-2109</td>
+              <td class="col-email">carlos.lima@email.com</td>
+              <td class="col-endereco">Rua Minas Gerais, 89 – MG</td>
+              <td><span class="status ativo">Ativo</span></td>
+              <td>Homem</td>
+              <td>10/01/1988</td>
+              <td class="col-action">
+                <button class="btn btn-editar" type="button">Editar</button>
+                <button class="btn btn-inativar" type="button">Inativar</button>
+              </td>
+            </tr>
+
+            <tr data-id="321.654.987-00">
+              <td class="col-img">👤</td>
+              <td class="col-nome">Ana Paula Rodrigues</td>
+              <td>321.654.987-00</td>
+              <td class="col-telefone">(41) 95432-1098</td>
+              <td class="col-email">ana.rodrigues@email.com</td>
+              <td class="col-endereco">Rua das Araucárias, 300 – PR</td>
+              <td><span class="status ativo">Ativo</span></td>
+              <td>Mulher</td>
+              <td>05/11/1999</td>
+              <td class="col-action">
+                <button class="btn btn-editar" type="button">Editar</button>
+                <button class="btn btn-inativar" type="button">Inativar</button>
+              </td>
+            </tr>
+
+            <tr data-id="654.123.789-00">
+              <td class="col-img">👤</td>
+              <td class="col-nome">Rafael Moreira Santos</td>
+              <td>654.123.789-00</td>
+              <td class="col-telefone">(51) 94321-0987</td>
+              <td class="col-email">rafael.santos@email.com</td>
+              <td class="col-endereco">Av. Ipiranga, 1020 – RS</td>
+              <td><span class="status ativo">Ativo</span></td>
+              <td>Homem</td>
+              <td>30/06/1990</td>
+              <td class="col-action">
+                <button class="btn btn-editar" type="button">Editar</button>
+                <button class="btn btn-inativar" type="button">Inativar</button>
+              </td>
+            </tr>
+
+            <tr data-id="789.321.654-00">
+              <td class="col-img">👤</td>
+              <td class="col-nome">Beatriz Nogueira Pinto</td>
+              <td>789.321.654-00</td>
+              <td class="col-telefone">(61) 93210-9876</td>
+              <td class="col-email">beatriz.pinto@email.com</td>
+              <td class="col-endereco">SQN 210 Bloco B – DF</td>
+              <td><span class="status ativo">Ativo</span></td>
+              <td>Mulher</td>
+              <td>18/09/1985</td>
+              <td class="col-action">
+                <button class="btn btn-editar" type="button">Editar</button>
+                <button class="btn btn-inativar" type="button">Inativar</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL EDITAR -->
+  <div id="modalEditar" class="modal hidden">
+    <div class="modal-content">
+      <h3>Editar Cliente</h3>
+
+      <label>Nome</label>
+      <input type="text" id="editNome">
+
+      <label>Telefone</label>
+      <input type="text" id="editTelefone">
+
+      <label>Email</label>
+      <input type="email" id="editEmail">
+
+      <label>Endereço</label>
+      <input type="text" id="editEndereco">
+
+      <div class="modal-actions">
+        <button class="btn" id="btnSalvar">Salvar</button>
+        <button class="btn" id="btnCancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL ADICIONAR -->
+  <div id="modalAdicionar" class="modal hidden">
+    <div class="modal-content">
+      <h3>Novo Cliente</h3>
+
+      <label>Nome</label>
+      <input type="text" id="novoNome">
+
+      <label>CPF</label>
+      <input type="text" id="novoCpf">
+
+      <label>Telefone</label>
+      <input type="text" id="novoTelefone">
+
+      <label>Email</label>
+      <input type="email" id="novoEmail">
+
+      <label>Endereço</label>
+      <input type="text" id="novoEndereco">
+
+      <label>Sexo</label>
+      <select id="novoSexo">
+        <option value="Homem">Homem</option>
+        <option value="Mulher">Mulher</option>
+      </select>
+
+      <label>Data de Nascimento</label>
+      <input type="date" id="novoNascimento">
+
+      <div class="modal-actions">
+        <button class="btn" id="btnSalvarNovo">Salvar</button>
+        <button class="btn" id="btnCancelarNovo">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Produtos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <!-- TOOLBAR -->
+      <div class="toolbar">
+          <p>Exibindo 1 - 6 de 100 resultados</p>
+
+          <button id="btnNovoProduto" class="btn btn-secondary">
+             + Novo Produto
+          </button>
+      </div>
+
+
+      <!-- LAYOUT PRINCIPAL -->
+      <div class="content-layout">
+
+        <!-- TABELA DE PRODUTOS -->
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="col-img"></th>
+                <th>Nome</th>
+                <th>Attr 1</th>
+                <th>Attr 2</th>
+                <th>CF 1</th>
+                <th>CF 2</th>
+                <th>Avaliação</th>
+                <th>preço</th>
+                <th class="col-qty"></th>
+                <th class="col-action"></th>
+              </tr>
+            </thead>
+
+            <tbody >
+
+              <!-- PRODUTO 1 -->
+              <tr>
+                <td class="col-img">
+                  <img class="product-img" src="https://m.media-amazon.com/images/I/91ZVf3kNrcL._SY425_.jpg" />
+                </td>
+                <td class="product-name">
+                  <a href="https://www.amazon.com/Let-Them-Theory-Life-Changing-Millions/dp/1401971369" target="_blank">
+                    The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About
+                  </a>
+                </td>
+                <td class="muted">Desenvolvimento pessoal</td>
+                <td class="muted">Psicologia • Autoconhecimento • Hábitos</td>
+                <td class="muted">Destaque</td>
+                <td class="muted">7788</td>
+                <td>
+                  <span class="rating">
+                    <span class="muted">5.0</span>
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews">(23)</span>
+                  </span>
+                </td>
+                <td class="price">$15</td>
+                <td class="col-qty"><input class="qty" type="number" value="1"></td>
+                <td class="col-action"><button class="btn">Adicionar ao carrinho</button></td>
+              </tr>
+
+              <!-- PRODUTO 2 -->
+              <tr>
+                <td class="col-img">
+                  <img class="product-img" src="https://m.media-amazon.com/images/I/81975nuy0DL._SY425_.jpg" />
+                </td>
+                <td class="product-name">
+                  <a href="https://www.amazon.com/Invisible-Coup-American-Foreign-Immigration/dp/0063422506" target="_blank">
+                    The Invisible Coup: How American Elites and Foreign Powers Use Immigration as a Weapon
+                  </a>
+                </td>
+                <td class="muted">Política</td>
+                <td class="muted">Geopolítica • Sociedade • Poder</td>
+                <td class="muted">Recomendado</td>
+                <td class="muted">4455</td>
+                <td>
+                  <span class="rating">
+                    <span class="muted">4.8</span>
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(18)</span>
+                  </span>
+                </td>
+                <td class="price">$22</td>
+                <td class="col-qty"><input class="qty" type="number" value="1"></td>
+                <td class="col-action"><button class="btn">Adicionar ao carrinho</button></td>
+              </tr>
+
+              <!-- PRODUTO 3 -->
+              <tr>
+                <td class="col-img">
+                  <img class="product-img" src="https://m.media-amazon.com/images/I/71gUOhERuDL._SY425_.jpg" />
+                </td>
+                <td class="product-name">
+                  <a href="https://www.amazon.com/Theo-Golden-Novel-Allen-Levi/dp/1668236516" target="_blank">
+                    Theo of Golden: A Novel
+                  </a>
+                </td>
+                <td class="muted">Ficção</td>
+                <td class="muted">Drama • Literatura contemporânea</td>
+                <td class="muted">Clássico moderno</td>
+                <td class="muted">9900</td>
+                <td>
+                  <span class="rating">
+                    <span class="muted">4.2</span>
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(22)</span>
+                  </span>
+                </td>
+                <td class="price">$14 <span class="old">$20</span></td>
+                <td class="col-qty"><input class="qty" type="number" value="1"></td>
+                <td class="col-action"><button class="btn">Adicionar ao carrinho</button></td>
+              </tr>
+
+              <!-- PRODUTO 4 -->
+              <tr>
+                <td class="col-img">
+                  <img class="product-img" src="https://m.media-amazon.com/images/I/91ulu+khYLL._SY425_.jpg" />
+                </td>
+                <td class="product-name">
+                  <a href="https://www.amazon.com/Frozen-River-Book-Club-Novel/dp/0593312074" target="_blank">
+                    The Frozen River: A GMA Book Club Pick: A Novel
+                  </a>
+                </td>
+                <td class="muted">Ficção histórica</td>
+                <td class="muted">Mistério • Investigação • Drama</td>
+                <td class="muted">Tendência</td>
+                <td class="muted">6677</td>
+                <td>
+                  <span class="rating">
+                    <span class="muted">4.5</span>
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews">(15)</span>
+                  </span>
+                </td>
+                <td class="price">$11</td>
+                <td class="col-qty"><input class="qty" type="number" value="1"></td>
+                <td class="col-action"><button class="btn">Adicionar ao carrinho</button></td>
+              </tr>
+
+              <!-- PRODUTO 5 -->
+              <tr>
+                <td class="col-img">
+                  <img class="product-img" src="https://m.media-amazon.com/images/I/813k-BbIZ+L._SY425_.jpg" />
+                </td>
+                <td class="product-name">
+                  <a href="https://www.amazon.com/Correspondent-Novel-Virginia-Evans/dp/0593798430" target="_blank">
+                    The Correspondent: A Novel
+                  </a>
+                </td>
+                <td class="muted">Ficção</td>
+                <td class="muted">Política • Drama • Jornalismo</td>
+                <td class="muted">Relevante</td>
+                <td class="muted">9900</td>
+                <td>
+                  <span class="rating">
+                    <span class="muted">3.8</span>
+                    <span class="stars">★★★★☆</span>
+                    <span class="reviews">(19)</span>
+                  </span>
+                </td>
+                <td class="price">$25</td>
+                <td class="col-qty"><input class="qty" type="number" value="1"></td>
+                <td class="col-action"><button class="btn">Adicionar ao carrinho</button></td>
+              </tr>
+
+              <!-- PRODUTO 6 -->
+              <tr>
+                <td class="col-img">
+                  <img class="product-img" src="https://m.media-amazon.com/images/I/71Co-EaTuNL._SY425_.jpg" />
+                </td>
+                <td class="product-name">
+                  <a href="https://www.amazon.com/dp/B0CW1KHGB7" target="_blank">
+                    More or Less Maddy: A Novel
+                  </a>
+                </td>
+                <td class="muted">Ficção</td>
+                <td class="muted">Drama • Juventude • Saúde mental</td>
+                <td class="muted">Em destaque</td>
+                <td class="muted">1122</td>
+                <td>
+                  <span class="rating">
+                    <span class="muted">4.4</span>
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews">(15)</span>
+                  </span>
+                </td>
+                <td class="price">$1,99 <span class="old">$19</span></td>
+                <td class="col-qty"><input class="qty" type="number" value="1"></td>
+                <td class="col-action"><button class="btn">Adicionar ao carrinho</button></td>
+              </tr>
+                
+            </tbody>
+          </table>
+        </div>
+
+        <!-- SIDEBAR LATERAL -->
+        <aside class="sidebar">
+          <h3>Opções</h3>
+
+         <div class="sidebar-group">
+          <label>Filtrar produto</label>
+           <input type="text" id="filterInput" placeholder="Digite o nome">
+        </div>
+
+        <div class="sidebar-group">
+          <label>Ordenar preço</label>
+          <select id="priceSort">
+          <option value="">Selecione</option>
+          <option value="asc">Menor → Maior</option>
+          <option value="desc">Maior → Menor</option>
+          </select>
+        </div>
+
+          <div class="sidebar-footer">
+            <a href="menu.html">Voltar</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+     <!-- MODAL CADASTRAR PRODUTO -->
+  <div class="modal hidden" id="modalProduto">
+    <div class="modal-content">
+      <h3>Cadastrar Produto</h3>
+
+      <!-- IMAGEM -->
+      <input type="file" id="imagemProduto" accept="image/*">
+      <img id="previewImagem"
+           style="display:none; width:100%; max-height:180px; object-fit:cover; border-radius:8px; border:1px solid #e5e7eb;">
+
+      <input type="text" id="nomeProduto" placeholder="Nome do produto">
+      <input type="text" id="attr1" placeholder="Attr 1">
+      <input type="text" id="attr2" placeholder="Attr 2">
+      <input type="number" id="preco" placeholder="Preço">
+
+      <div class="modal-actions">
+        <button id="salvarProduto" class="btn">Salvar</button>
+        <button id="cancelarProduto" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="btnExcluirSelecionado" class="btn-fab-excluir" type="button">
+    Excluir
+  </button>
+
+  <script src="js/index.js"></script>
+  
+</body>
+</html>
